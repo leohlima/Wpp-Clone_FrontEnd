@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>Wpp Web</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!--2. ASIDE-->
+        <aside class="aside">
+            <header>
+                <div class="avatar-img" id="eu"></div>
+                <div class="header__icons">
+                    <div class="bi bi-plus-circle-dotted"></div>
+                    <div class="bi bi-chat"></div>
+                    <div class="bi bi-three-dots-vertical"></div>
+                </div>
+            </header>
+            <div class="aside-notifications">
+                <div class="avatar-img" id="bell__notification">
+                    <bi class="bi-bell-slash"></bi>
+                </div>
+                <div class="aside-notification__description">
+                    <p class="p">Receba notificações de novas mensagens</p>
+                    <p class="p2">Ativar notificações na área de trabalho ></p>
+                </div>
+            </div>
+            <div class="aside-search">
+                <bi class="bi-search" id="search-icon"></bi>
+                <input type="text" placeholder="Procurar ou começar uma nova conversa">
+            </div>
+
+               <!--3. CONTATOS-->
+            <div class="avatar-conversation" id="avatar-conversation__active">
+                <div class="avatar-img" id="avatar-2"></div>
+                <div class="avatar-conversation__msg">
+                    <p class="p-name">Scarlett Johansson</p>
+                    <p class="p-msg">
+                        <bi class="bi-check2-all"></bi><strong>Oi, tudo bem?</strong>
+                    </p>
+                </div>
+                <div class="box-hour">
+                    <p class="p-hour">15:18</p>
+                </div>
+            </div>         
+            <div class="avatar-conversation">
+                <div class="avatar-img" id="avatar-3"></div>
+                <div class="avatar-conversation__msg">
+                    <p class="p-name">Bill Gates</p>
+                    <p class="p-msg">
+                        Está disponível para um freela?
+                    </p>
+                </div>
+                <div class="box-hour">
+                    <p class="p-hour">13:25</p>
+                    <div class="notification__box-circle">
+                        <p class="notification-number">2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="avatar-conversation">
+                <div class="avatar-img" id="avatar-4"></div>
+                <div class="avatar-conversation__msg">
+                    <p class="p-name">CEO EvilCorp</p>
+                    <p class="p-msg">
+                        O projeto ficou perfeito, obrigada!
+                    </p>
+                </div>
+                <div class="box-hour">
+                    <p class="p-hour">12:23</p>
+                    <div class="notification__box-circle">
+                        <p class="notification-number">1</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+        <main>
+
+            <!--4. CONVERSA ATIVA-->
+            <section class="main-conversation">
+                <div class="avatar-active">
+                    <div class="avatar-img" id="avatar-2"></div>
+                    <p class="p-name" id="avatar-active">Scarlett Johansson</p>
+                </div>
+                <div class="header__icons">
+                    <bi class="bi-search"></bi>
+                    <bi class="bi-paperclip"></bi>
+                    <bi class="bi-three-dots-vertical"></bi>
+                </div>
+            </section>
+
+
+            <!--5. TELA MENSAGEM-->
+            <section>
+                <div class="msg">
+                    <div class="msg-send-box">
+                        <div class="msg-send">
+                            <p class="p-msg2">Oi, tudo bem?</p>
+                        </div>
+                        <bi class="bi-caret-right-fill"></bi>
+                    </div>
+                    <div class="msg-receive-box">
+                        <bi class="bi-caret-left-fill"></bi>
+                        <div class="msg-receive">
+                            <p class="p-msg2">Olá, bom dia!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                <!--6. ESCREVER MENSAGEM-->
+            <section class="write-msg">
+                <bi class="bi-emoji-smile"></bi>
+                <input type="text" class="input-msg" placeholder="Digite uma mensagem">
+            </section>
+
+        </main>
+    </div>
+
+
+</body>
+
+</html>

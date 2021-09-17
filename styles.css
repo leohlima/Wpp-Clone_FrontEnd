@@ -1,0 +1,355 @@
+/*1. ESTILOS GERAIS E RESETS*/
+/**/
+/*2. ASIDE*/
+/**/
+/*3. CONTATOS*/
+/**/
+/*4. CONVERSA ATIVA*/
+/**/
+/*5. TELA MENSAGEM*/
+/**/
+/*6. ESCREVER MENSAGEM*/
+/**/
+
+/*1. ESTILOS GERAIS E RESETS*/
+/**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.p {
+    font-size: 1rem;
+}
+
+.p2, .p-msg {
+    font-size: 0.8rem;
+}
+
+.p-msg {
+    color: gray;
+}
+
+.container {
+    display: flex;
+}
+
+/**/
+/*2. ASIDE*/
+/**/
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid gray;
+    max-width: 450px;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;   
+    padding: 8px;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(238, 238, 238);
+}
+
+.avatar-img {
+    background-size: cover;
+    background-position: center;
+    background-image: url('./assets/avatar1.png');
+    background-color: rgb(211, 211, 211);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#eu:hover {
+    border: 1px solid rgb(30, 190, 30);
+}
+
+
+.aside-notifications {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    background-color: rgb(164, 205, 247);
+    height: 80px;
+}
+
+#bell__notification {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-right: 10px;
+}
+#bell__notification:hover {
+    opacity: .4;
+}
+
+.bi-bell-slash {
+    color: dodgerblue;   
+    cursor: pointer; 
+}
+
+.header__icons {
+    display: flex;
+}
+
+.bi {
+    margin: 8px;
+    color: rgb(30, 190, 30);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.bi:hover {
+    color: rgb(71, 224, 71);
+}
+
+
+.aside-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: rgb(248, 248, 248);
+}
+
+.aside-search input {
+    width: 310px;
+    padding: 8px;
+    padding-left: 30px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+#search-icon {
+    color: rgb(238, 238, 238);
+    position: absolute;
+    left: 15px;
+}
+
+
+/**/
+/*3. CONTATOS*/
+/**/
+
+.avatar-conversation {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid gray;
+}
+
+.avatar-conversation:hover {
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+
+#avatar-conversation__active {
+    background-color:  rgb(238, 238, 238);
+    border-bottom: 1px solid gray;
+}
+
+.p-hour {
+    color: rgb(189, 186, 186);
+    font-size: .7rem;
+    margin-left: 82px;
+}
+
+.notification__box-circle {
+    display: flex;    
+    width: 15px;
+    height: 15px;
+    background-color: greenyellow;
+    margin-left: 90px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+.notification-number {
+    color: white;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+#avatar-2 {
+    background-image: url('./assets/avatar2.png');
+}
+
+#avatar-3 {
+    background-image: url('./assets/avatar3.png');
+}
+#avatar-4 {
+    background-image: url('./assets/avatar4.png');
+}
+
+.avatar-conversation__msg {
+    margin-left: 10px;
+}
+
+.bi-check2-all {
+    color: dodgerblue;
+    margin-left: 10px;    
+}
+
+/**/
+/*4. CONVERSA ATIVA*/
+/**/
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-conversation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color:rgb(238, 238, 238);
+    height: 60px;
+}
+
+.avatar-active {
+    display: flex;
+    align-items: center;
+}
+
+#avatar-active {
+    margin-left: 5px;
+}
+
+.header__icons bi {
+    color: gray;
+    margin: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+} 
+
+.header__icons bi:hover {
+    font-size: 1.3rem;
+}
+
+/**/
+/*5. TELA MENSAGEM*/
+/**/
+
+.msg {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color:rgb(255, 187, 187);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./assets/background_whats.png');
+    height: 80vh;
+} 
+
+.msg-send-box {
+    align-self: end;
+    margin-right: 30px;
+    margin-bottom: 30px; 
+    display: flex;
+   
+}
+
+.msg-send {
+    background-color: greenyellow;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.bi-caret-right-fill {
+    color: greenyellow;
+    align-self: flex-start;
+    margin-left: -5px;
+    margin-top: -3px;
+    font: 1.1rem;
+}
+
+.p-msg2 {
+    color: black;
+}
+
+.msg-receive-box {
+    display: flex;
+    margin-left: 10px;
+}
+
+.msg-receive {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 5px;
+    padding-right: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.bi-caret-left-fill {
+    color: white;
+    font-size: 1.1rem;
+    margin-right: -6px;
+    margin-top: -3px;    
+}
+
+/**/
+/*6. ESCREVER MENSAGEM*/
+/**/
+
+.write-msg {
+    display: flex;
+    background-color: rgb(238, 238, 238);
+    height: 60px;
+    padding: 8px;
+    align-items: center;
+}
+
+.input-msg {
+    margin-left: 5px;
+    padding: 8px;
+    padding-left: 15px;
+    flex-grow: 1;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    outline: none;
+}
+
+.bi-emoji-smile {
+    cursor: pointer;
+}
+
+.bi-emoji-smile:hover {
+    color: gold;
+} 
+
+
+
+
+
+
+
+
+
+
